@@ -1,0 +1,248 @@
+body{
+    background-color: rgba(0, 8, 29, 1);
+    color: white;   
+    font-family: 'Roboto', sans-serif;
+    
+}
+.image-color {
+    background:url('https://assets.nflxext.com/ffe/siteui/vlv3/e89c9679-2f5f-491d-924c-c58924a8ee4b/8ec27a1d-02ce-4489-b320-a95106906f5d/IN-en-20221121-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+    background-size: 1545px 650px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 98%;
+        aspect-ratio: 16/9;
+        z-index: -1;
+}
+.image-color::before{
+    position: absolute;
+    content: " ";
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 8, 29, 0.5);
+    top: 0;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+nav .img img{
+    width: 20%;
+    margin-top: -18px;
+}
+nav #language {
+    width: 250px;
+    height: 35px;
+    background: transparent;
+    color: white;
+    border: 3px solid white;
+    outline: none;
+    border-radius: 4px;
+}
+nav #language option{
+    color: black;
+}
+nav .login{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    width: 225px;
+    height: 14px;
+    background: red;
+    border: 3px solid red;
+    opacity: 1;
+    cursor: pointer;
+    margin-left: 4px;
+    border-radius: 3px;
+}
+nav .login:hover{
+    background: transparent;
+    transition: 0.4s;
+    border: 3px solid red;
+    color: red;
+}
+.main h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+.main h3{
+    text-align: center;
+    font-size: 34px;
+}
+.email-signup p{
+    font-size: 24px;
+}
+.main .border-gradient{
+    padding: 4px;
+    width: fit-content;
+    margin: auto;
+    background: linear-gradient(to right, red, purple);
+}
+.email-signup{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    gap: 5px;
+    background-color: rgba(0, 8, 29, 1);
+}
+.email-signup input{
+    width: 600px;
+    height: 48px;
+    border-radius: 6px;
+    font-size: 23px;
+}
+.email-signup button{
+    width: 200px;
+    height: 53px;
+    background-color: rgb(225, 11, 11);
+    color: white;
+    font-size: 26px;
+    border-radius: 6px;   
+}
+.first{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+
+    margin-top: 90px;
+    padding: 66px;
+    border-top: 2px solid rgb(61, 59, 59);
+    border-radius: 30px;
+}
+.first h1{
+
+    font-size: 55px;
+    margin-left: 40px;
+}
+.first p{
+    font-size: 27px;
+    margin-left: 40px;
+}
+.first img{
+    width: 44%;
+
+}
+.buttons h1{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 44px ;
+    border-top: 2px solid rgb(61, 59, 59);
+    border-radius: 30px;
+}
+.accordion{
+    margin: 20px auto;
+    width: 635px;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 600px;
+    padding: 2px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    background: rgb(33, 33, 78);
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: rgb(33, 33, 78);
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.bottom p{
+    font-size: 18px;
+    text-align: center;
+}
+.email-signup1{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+}
+.email-signup1 input{
+    width: 600px;
+    height: 48px;
+    border-radius: 6px;
+    font-size: 23px; 
+   
+}
+.email-signup1 button{
+    width: 200px;
+    height: 53px;
+    background-color: rgb(225, 11, 11);
+    color: white;
+    font-size: 26px;
+    border-radius: 6px; 
+}
+
+.footer{
+    display: flex;
+    padding: 44px;
+    border-top: 2px solid rgb(61, 59, 59);
+    margin-top: 53px; 
+    border-radius: 30px;
+    flex-direction: column;
+}
+.footer div:nth-child(1){
+  margin-left: 78px;
+}
+.footer div:nth-child(2){
+    
+    font-size: 20px;
+   justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    line-height: 1.7;
+} 
+
+.footer .list li{
+    list-style-type: none;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.copyright-txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:786px){
+
+}
+@media screen and (max-width:496px){
+    
+}

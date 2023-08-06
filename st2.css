@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: rgba(0,0,0,0.5) url('https://assets.nflxext.com/ffe/siteui/vlv3/2e884ce2-da1c-4501-ab9a-10c534d30975/6973a9ea-02b2-4de9-9006-d7d224c9b75d/IN-en-20230327-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-blend-mode: darken;
+}
+.logo img{
+    width: 12%;
+    margin-left: 30px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    margin-top: 60px;
+    width: 370px;
+    height: 750px;
+    perspective: 1000px;
+
+}
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 8, 29, 0.677);
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    border:  rgba(0, 8, 29, 0.677);
+}
+.card-back{
+    transform: rotateY(180deg);
+}
+.card h2{
+    margin-top: 100px;
+    font-weight: normal;
+    font-size: 24px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.input-box {
+    width: 80%;
+    background-color: rgb(43, 42, 42);
+    border: none;
+    border-radius: 4px;
+    margin: 6px 0;
+    height: 50px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: grey;
+    margin-left: 30px;
+}
+::placeholder{
+    color: grey;
+    font-size: 15px;
+}
+p{
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 20px;
+    color: white;
+}
+button{
+    width: 80%;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 35px 0 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.submit-btn{
+    position: relative;
+
+}
+.checkboxblock{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 30px;
+    color: white;
+}
+.card .btn{
+    margin-top: 70px;
+}
+.card a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 30px;
+}
+
+.footer{
+    display: flex;
+    margin-top: 53px; 
+    flex-direction: column;
+    background-color: rgba(0, 8, 29, 0.677);
+}
+.footer div:nth-child(1){
+  margin-left: 78px;
+  margin-top: 50px;
+}
+.footer div:nth-child(2){
+    margin-left: 78px;
+    margin-top: 10px;
+    font-size: 20px;
+   justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    line-height: 1.7;
+}
+
+.footer .list li{
+    list-style-type: none;
+}
+.footer .list{
+    width: 100%;
+    height: 150px;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
